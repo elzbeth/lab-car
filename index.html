@@ -1,486 +1,486 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta	name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LabCar</title>
-  <link href="css/materialize.css" rel="stylesheet" type="text/css">
-  <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
-  <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta	name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>LabCar</title>
+	<link href="css/materialize.css" rel="stylesheet" type="text/css">
+	<link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header >
-    <!--NAV BAR-->
-    <nav id="nav-menu">
-      <!--DESKTOP MENU-->
-      <div class="nav-wrapper white">
-        <a href="#" class="brand-logo nav-logo"><img src="assets/images/logoForma.png" alt="logo-color"></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class=" fa fa-bars fa-2x text-gray"></i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#rates">Viaja</a></li>
-          <li><a href="#driver">Conduce</a></li>
-          <li><a href="#modal1" class="btn btn-flat modal-trigger" id="login-btn">Inicia sesión</a></li>
-        </ul>
-        <!--/DESKTOP MENU-->
-        <!--MOBILE MENU-->
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="#">Viaja</a></li>
-          <li><a href="#">Conduce</a></li>
-          <li><a href="#modal1" class="btn modal-trigger bkg-yellow" id="login-btn2">Inicia sesión</a></li>
-        </ul>
-        <!--/MOBILE MENU-->
-      </div>
-    </nav>
-    <!--/NAV BAR-->
-    <!--LOGIN MODAL-->
-    <div id="modal1" class="modal container-login center responsive flow-text">
-      <div class="modal-content">
-        <div class="row">
-          <img id="user-avatar"src="assets/images/avatar.png" alt="user-avatar" class="responsive-img">
-        </div>
-        <form action="">
-          <div class="input-field col s10 offset-s1">
-            <input id="UserName" type="text" class="validate">
-            <label for="UserName"><i class="fa fa-user"></i>&nbsp; Nombre</label>
-          </div>
-          <div class="input-field col s10 offset-s1">
-            <input id="Password" type="password" class="validate">
-            <label for="Password"><i class="fa fa-lock"></i>&nbsp; Contraseña</label>
-          </div>
-          <button class="btn-flat btn-theme1">Ingresar&nbsp; <i class="fa fa-angle-right"></i></button>
-        </form>
-      </div>
-      <div class="modal-footer flow-text">
-        <p class="text-gray centered ">¿Olvidaste tu contraseña?
-          <a href="#modal1-b" class="btn modal-trigger btn-flat btn-theme3 " id="recovery-btn">RECUPERAR CONTRASEÑA</a>
-        </p>
-      </div>
-      <a href="#!" class="modal-action modal-close text-gray right">
-        <i class="fa fa-times class="responsive-img""></i>
-        <strong>Cerrar</strong>
-      </a>
-    </div>
-    <!--/LOGIN MODAL-->
-    <!--RECOVERY MODAL-->
-    <div id="modal1-b" class="modal container-login">
-      <div class="modal-content">
-        <form action="">
-          <div class="input-field col s10 offset-s1">
-            <input id="recovery-email" type="email" class="validate">
-            <label for="Password"><i class="fa fa-lock"></i>&nbsp; Correo electrónico</label>
-          </div>
-          <button class="btn-flat btn-theme1">Recuperar&nbsp; <i class="fa fa-send"></i></button>
-        </form>
-      </div>
-      <a href="#!" class="modal-action modal-close text-gray right">
-        <i class="fa fa-times class="responsive-img""></i>
-        <strong>Cerrar</strong>
-      </a>
-    </div>
-    <!--/RECOVERY MODAL-->
-    <!--MAIN-->
-    <main class="container-fluid ">
-      <!--COVER-->
-      <section id="cover" class="row">
-        <div id="hero">
-          <div class="row mobile-hero show-on-small hide-on-med-and-up ">
-            <div class=" card show-on-small hide-on-med-and-up col s10 offset-s2 col m8 offset-m4 col m5 offset-l7 col xl5 offset-xl7 bkg-yellow p-40 ">
-              <div class="row">
-                <h3 class="p-40 mt-20 col s12">Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="logo"></h3>
-                <a class="p-40 mt-20 col s6 offset-s1 btn btn-flat btn-theme1">
-                  <strong> Descarga la app</strong>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row desktop-hero show-on-medium-and-up hide-on-small-and-down" >
-            <div class="card show-on-medium-and-up  hide-on-small-and-down col s9 offset-s3 col m8 offset-m4 col m5 offset-l7 col xl5 offset-xl7 bkg-yellow p-40 mt-50">
-              <div class="row mb-0 mt-20 ">
-                <div class="col s7 m12">
-                  <h4 class="mb-0">Disfruta del viaje</h4>
-                </div>
-              </div>
-              <div class="row mt-0">
-                <div class="col s10 m12">
-                  <h4 class="mt-0 mb-0">Eres dueño de tu tiempo</h4>
-                </div>
-              </div>
-              <div class="row mt-0 mb-0">
-                <div class="col s7 m10">
-                  <h5>Viaja con <img src="assets/images/logoBlanco.png" alt="logo-color" id="travel-logo"></h5>
-                </div>
-              </div>
-              <div class="row mb-0">
-                <div class="col s7">
-                  <a href="#modal2" class="btn modal-trigger btn-theme1" id="register-btn">REGÍSTRATE</a>
-                </div>
-              </div>
-              <div class="row mt-0 mb-0">
-                <div class="col s12">
-                  <p class="white-lines hide-on-small-and-down">O bien</p>
-                </div>
-              </div>
-              <div class="row mt-0">
-                <div class="col s8 m11">
-                  <a href="#modal3" class="btn modal-trigger btn-theme1" id="driver-btn">Conviértete en un conductor</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--REGISTER MODAL-->
-      <div id="modal2" class="modal">
-        <div class="modal-content">
-          <img src="" alt="">
-          <form class="col s12">
-            <div class="row">
-              <div class="col s12 ">
-                <a href="#!" class="btn modal-close btn-theme1 center">YA TIENES UNA CUENTA</a>
-              </div>
-            </div>
-            <p class="center text-gray">O CREA UNA CUENTA NUEVA</p>
-            <div class="row ">
-              <div class="input-field col m6 s12">
-                <input placeholder="Nombre"  type="text" class="validate ">
-              </div>
-              <div class="input-field col m6 s12">
-                <input placeholder="Apellido" type="text" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Correo Electronico@correo.mx" type="password" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Telefono" type="text" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Contraseña" type="password" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Ciudad" type="text" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Opcional(Codigo de invitacion)" type="text" class="validate">
-              </div>
-            </div>
-            <div class="row">
-              <div clas="col s10 offset-s1 m10 offset-m1 l10 offset-l1">
-                <select>
-                  <option value="" disabled selected>¿Cómo te enteraste de nosotros?</option>
-                  <option value="1">Facebook</option>
-                  <option value="2">Twitter</option>
-                  <option value="3">Televisión o Radio</option>
-                  <option value="4">Referencia personal</option>
-                  <option value="5">Sitio oficial</option>
-                  <option value="6">Otro</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="row">
-              <div clas="col s12 m12 l12">
-                <a href="#!" class="modal-action btn-theme2 btn-flat col s12 m12 l12">ENVIAR</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/REGISTER MODAL-->
-      <!--DRIVER MODAL-->
-      <div id="modal3" class="modal">
-        <div class="modal-content p-20" id="driver-container">
-          <div class="row">
-            <a href="#!" class="modal-action modal-close text-gray right">
-              <i class="fa fa-times class="responsive-img""></i>
-              <strong>Cerrar</strong>
-            </a>
-          </div>
-          <form>
-            <div class="row">
-              <div class="col s10 offset-s1">
-                <select>
-                  <option value="" disabled selected>¿Tienes vehículo de 4 puertas?</option>
-                  <option value="1">Sí</option>
-                  <option value="2">No</option>
-                </select>
-                <select>
-                  <option value="" disabled selected>Marca</option>
-                  <option value="1">lorem ipsum</option>
-                  <option value="2">lorem ipsum</option>
-                  <option value="3">lorem ipsum</option>
-                  <option value="4">lorem ipsum</option>
-                  <option value="5">lorem ipsum</option>
-                  <option value="6">lorem ipsum</option>
-                </select>
-                <h6 class="text-gray">¿No ves tu vehículo en la lista?</h6>
-                <button class=" btn-flat btn-theme3 centered">Envia un correo a sociosmdv@uber.com &nbsp; <i class="fa fa-send"></i></button>
-                <select>
-                  <option value="" disabled selected>Modelo</option>
-                  <option value="1">lorem ipsum</option>
-                  <option value="2">lorem ipsum</option>
-                  <option value="3">lorem ipsum</option>
-                </select>
-                <select>
-                  <option value="" disabled selected>Año</option>
-                  <option value="1">2018</option>
-                  <option value="2">2017</option>
-                  <option value="3">2016</option>
-                  <option value="4">2015</option>
-                  <option value="5">2014</option>
-                  <option value="6">2013</option>
-                  <option value="7">2012</option>
-                  <option value="8">2011</option>
-                  <option value="9">2010</option>
-                </select>
-                <input id="car-number" type="text" class="validate" placeholder="Número de matrícula">
-                <label>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</label>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close btn-theme2 btn-flat">RESGISTRARSE</a>
-        </div>
-      </div>
-      <!--/DRIVER MODAL-->
-      <!--/COVER-->
-      <!--DOWNLOAD SECTION-->
-      <section id="download" class="row bkg-yellow pt-20 pb-20">
-        <div class="container white-border p-20">
-          <div class="row">
-            <div id="phone-img" class="row p-40">
-              <!--MOBILE DOWNLOAD-->
-              <div class="row">
-                <div class="center">
-                  <h4 class="show-on-medium-and-down hide-on-med-and-up">La nueva app</h4>
-                </div>
-              </div>
-              <!--/MOBILE DOWNLOAD-->
-              <!--DESKTOP DOWNLOAD-->
-              <img class="responsive-img col s3 offset-s1 m6 offset-m2 l5 offset-l1 responsive-image"src="assets/images/iPhone6Plus.png" alt="mobile-app">
-              <div class="col s5 m12 l6 offset-s1 offset-m3 offset-l1 hide-on-med-and-down">
-                <h4 class="pl-20 hide-on-small-and-down show-on-medium-and-up ">Descarga la nueva app</h4>
-                <p class="left hide-on-small-and-down show-on-medium-and-up l-20 mt-0">La version actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-                <p class="left hide-on-med-and-down show-on-medium-and-up l-20 mt-0">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
-              </div>
-              <!--/DESKTOP DOWNLOAD-->
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="center">
-            <h4 class="show-on-medium-and-down hide-on-med-and-up left ml-20">Llega a tu destino aún más rápido</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/DOWNLOAD SECTION-->
-    <!--DRIVER SECTION-->
-    <section id="driver" class="row">
-      <div id="driver-section">
-        <div class="card-panel col s12 m12 l6 flow-text right bkg-black mb-0 mt-0 p-40">
-          <div class="row mb-0 mt-50">
-            <div class="col s11">
-              <h4 class="mb-0 ">Conduce cuando quieras</h4>
-            </div>
-          </div>
-          <div class="row mt-0">
-            <div class="col s11">
-              <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-            </div>
-          </div>
-          <div class="row mt-0">
-            <div class="col s8">
-              <a href="#modal3" class="btn modal-trigger btn-theme2" id="register-btn">Conviértete en un conductor</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/DRIVER SECTION-->
-      <!--RATES-ROUTES-MAP-SECTION-->
-      <section id="rates" class="row bkg-yellow">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 col m6 rates-section">
-              <h2 class="font-size">Tarifas</h2>
-              <p>Consulta las tarifas LabCar aquí</p>
-              <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <img src="assets/images/shape.png" alt="start" class="mb-0">
-                    <div class="input-field col s12 mt-0">
-                      <input id="start" type="text" class="validate col s9 white-text mt-0" placeholder="Ingrese su punto de partida">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="row">
-                <form class="col s12 m12">
-                  <div class="row">
-                    <img src="assets/images/shape2.png" alt="end" class="mb-0">
-                    <div class="input-field col s12 m12 mt-0">
-                      <input id="end" type="text" class="validate col s9 white-text mt-0" placeholder="Ingrese su destino">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <button class="btn-theme1 btn-flat col s8 offset-s2">¡TRAZAR RUTA!</button>
-            </div>
-            <div class="col s12 m12 l6">
-              <div class="map white-border">
-                <iframe  id="map-route" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8170892820463!2d-99.16530288571833!3d19.420307446107355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3758fdbe95%3A0xdbc95f761115cd14!2sTonal%C3%A1+30%2C+Roma+Nte.%2C+06700+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1516025170708" width="400" height="300" frameborder="10" style="border:0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--/RATES-ROUTES-MAP-SECTION-->
-      <!--FOOTER-->
-      <footer class="container-fluid">
-        <div class="container ">
-          <!--FOOTER-LOGO-->
-          <div class="row ">
-            <div class="col s12 fake-hr">
-              <div id="logo-footer">
-                <a href="#nav-menu"><img src="assets/images/logoBlanco.png" alt="logo-color"></a>
-              </div>
-            </div>
-          </div>
-          <!--/FOOTER-LOGO-->
-          <!-- FOOTER LINKS COLUMNS-->
-          <div class="row mb-0 ptb-20">
-            <!-- FIRST FOOTER LINKS COLUMN-->
-            <div id="first-column" class="col m3 offset-m3  s6 ">
-              <div class="row mb-0">
-                <a class="col s12">Viaja</a>
-                <a class="col s12">Conduce</a>
-                <a class="col s12">Ciudades</a>
-                <a class="col s12">Reseñas</a>
-                <a class="col s12">Entregas</a>
-                <a class="col s12">¿Cómo funciona?</a>
-                <a class="col s12">Paises</a>
-                <a class="col s12">Seguridad</a>
-              </div>
-            </div>
-            <!-- /FIRST FOOTER LINKS COLUMN-->
-            <!-- SECOND FOOTER LINKS COLUMN-->
-            <div id="second-column"class="col s3 mb-0 hide-on-small-and-down show-on-medium-and-up">
-              <div class="row mb-0">
-                <a class="col s12">Oportunidades</a>
-                <a class="col s12">Nuestra historia</a>
-                <a class="col s12">API de LabCar</a>
-                <a class="col s12">Eventos</a>
-                <a class="col s12">Desarrolladores</a>
-                <a class="col s12">Servicios</a>
-                <a class="col s12">Laboratoria</a>
-                <a class="col s12">Coders</a>
-              </div>
-            </div>
-            <!-- /SECOND FOOTER LINKS COLUMN-->
-            <!-- RIGHT SIDE NAV BAR -->
-            <div class="row mb-0">
-              <div id="stores-column" class="col s6 m3 l3">
-                <!-- SOCIAL MOBILE-->
-                <div id="social-mobile" class="col s11 offset-s1  mt-0 show-on-small">
-                  <div class="row mt-0">
-                    <ul id="social">
-                      <li class="social-icons col s1">
-                        <a href="#" id="icoFacebook" title="Facebook">
-                          <i class="icon-facebook social-icon  fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="social-icons col s1">
-                        <a href="#" id="ico-Twitter" title="Twitter">
-                          <i class="icon-twitter social-icon fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="social-icons col s1">
-                        <a href="#" id="ico-LinkedIn" title="LinkedIn">
-                          <i class="icon-instagram social-icon fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                      </li class="social-icons col s1">
-                      <li class="social-icons col s1">
-                        <a href="#" id="ico-Apple" title="Apple Store">
-                          <i class="icon-instagram social-icon fa fa-apple" aria-hidden="true"></i>
-                        </a>
-                      </li class="social-icons col s1">
-                      <li class="social-icons col s1">
-                        <a href="#" id="ico-Google" title="Play Store">
-                          <i class="icon-instagram social-icon fa fa-play" aria-hidden="true"></i>
-                        </a>
-                      </li class="social-icons">
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <a class="col s11 store-image"><img class="responsive-img"src="assets/images/appstore.png" alt="apple-store"></a>
-                  <a class="col s11 store-image"><img class="responsive-img"src="assets/images/enBadgeWebGeneric.png" alt="play-store"></a>
-                </div>
-              </div>
-              <!-- /RIGHT SIDE NAV BAR -->
-            </div>
-            <!-- SOCIAL DESKTOP-->
-            <div id="social-column" class="col s6 m3  mt-0 hide-on-small-and-down">
-              <div class="row mt-0">
-                <ul id="social">
-                  <li class="social-icons col s1">
-                    <a href="#" id="icoFacebook" title="Facebook">
-                      <i class="icon-facebook social-icon  fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="social-icons col s1">
-                    <a href="#" id="ico-Twitter" title="Twitter">
-                      <i class="icon-twitter social-icon fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="social-icons col s1">
-                    <a href="#" id="ico-LinkedIn" title="LinkedIn">
-                      <i class="icon-instagram social-icon fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                  </li class="social-icons col s1">
-                  <li class="social-icons col s1">
-                    <a href="#" id="ico-Apple" title="Apple Store">
-                      <i class="icon-instagram social-icon fa fa-apple" aria-hidden="true"></i>
-                    </a>
-                  </li class="social-icons col s1">
-                  <li class="social-icons col s1">
-                    <a href="#" id="ico-Google" title="Play Store">
-                      <i class="icon-instagram social-icon fa fa-play" aria-hidden="true"></i>
-                    </a>
-                  </li class="social-icons">
-                </ul>
-              </div>
-            </div>
-            <!-- /FOOTER COLUMNS -->
-            <div class="row fake-hr mt-0">
-              <!--/SOCIAL FOOTER-->
-            </div>
-            <!-- COPYRIGHT -->
-            &copy; 2017 LabCar techonologies Inc.
-          </div>
-          <!--END FOOTER CONTAINER-->
-        </footer>
-      </main>
-      <!--SCRIPTS-->
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/app.js"></script>
-    </body>
-    </html>
+	<header >
+		<!--NAV BAR-->
+		<nav id="nav-menu">
+			<!--DESKTOP MENU-->
+			<div class="nav-wrapper white">
+				<a href="#" class="brand-logo nav-logo"><img src="assets/images/logoForma.png" alt="logo-color"></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse right"><i class=" fa fa-bars fa-2x text-gray"></i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#rates">Viaja</a></li>
+					<li><a href="#driver">Conduce</a></li>
+					<li><a href="#modal1" class="btn btn-flat modal-trigger" id="login-btn">Inicia sesión</a></li>
+				</ul>
+				<!--/DESKTOP MENU-->
+				<!--MOBILE MENU-->
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="#rates">Viaja</a></li>
+					<li><a href="#driver">Conduce</a></li>
+					<li><a href="#modal1" class="btn modal-trigger bkg-yellow" id="login-btn2">Inicia sesión</a></li>
+				</ul>
+				<!--/MOBILE MENU-->
+			</div>
+		</nav>
+		<!--/NAV BAR-->
+		<!--MAIN-->
+		<main class="container-fluid ">
+			<!--COVER-->
+			<section id="cover" class="row">
+				<div id="hero">
+					<div class="row mobile-hero show-on-small hide-on-med-and-up ">
+						<div class="card show-on-small hide-on-med-and-up col s10 offset-s2 col m8 offset-m4 col m5 offset-l7 col xl5 offset-xl7 bkg-yellow p-40 ">
+							<div class="row">
+								<h3 class="p-40 mt-20 col s12">Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="logo"></h3>
+								<a class="p-40 mt-20 col s6 offset-s1 btn btn-flat btn-theme1">
+									<strong> Descarga la app</strong>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row desktop-hero show-on-medium-and-up hide-on-small-and-down" >
+						<div id="cover-card" class="card show-on-medium-and-up  hide-on-small-and-down col s9 offset-s3 col m8 offset-m4 col m5 offset-l7 col xl5 offset-xl7 bkg-yellow p-40 mt-50">
+							<div class="row mb-0 mt-20 ">
+								<div class="col s7 m12">
+									<h4 class="mb-0">Disfruta del viaje</h4>
+								</div>
+							</div>
+							<div class="row mt-0">
+								<div class="col s10 m12">
+									<h4 class="mt-0 mb-0">Eres dueño de tu tiempo</h4>
+								</div>
+							</div>
+							<div class="row mt-0 mb-0">
+								<div class="col s7 m10">
+									<h5>Viaja con <img src="assets/images/logoBlanco.png" alt="logo-color" id="travel-logo"></h5>
+								</div>
+							</div>
+							<div class="row mb-0">
+								<div class="col s7">
+									<a href="#modal2" class="btn modal-trigger btn-theme1" id="register-btn">REGÍSTRATE</a>
+								</div>
+							</div>
+							<div class="row mt-0 mb-0">
+								<div class="col s12">
+									<p class="white-lines hide-on-small-and-down">O bien</p>
+								</div>
+							</div>
+							<div class="row mt-0">
+								<div class="col s8 m11">
+									<a href="#modal3" class="btn modal-trigger btn-theme1" id="driver-btn">Conviértete en un conductor</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/COVER-->
+			<!--DOWNLOAD SECTION-->
+			<section id="download" class="row bkg-yellow pt-20 pb-20">
+				<div class="container white-border p-20">
+					<div class="row">
+						<div id="phone-img" class="row p-40">
+							<!--MOBILE DOWNLOAD-->
+							<div class="row">
+								<div class="center">
+									<h4 class="show-on-medium-and-down hide-on-med-and-up">La nueva app</h4>
+								</div>
+							</div>
+							<!--/MOBILE DOWNLOAD-->
+							<!--DESKTOP DOWNLOAD-->
+							<img class="responsive-img col s3 offset-s1 m6 offset-m2 l5 offset-l1 responsive-image"src="assets/images/iPhone6Plus.png" alt="mobile-app">
+							<div class="col s5 m12 l6 offset-s1 offset-m3 offset-l1 hide-on-med-and-down">
+								<h4 class="pl-20 hide-on-small-and-down show-on-medium-and-up ">Descarga la nueva app</h4>
+								<p class="left hide-on-small-and-down show-on-medium-and-up l-20 mt-0">La version actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+								<p class="left hide-on-med-and-down show-on-medium-and-up l-20 mt-0">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+							</div>
+							<!--/DESKTOP DOWNLOAD-->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left">
+						<h5 class="show-on-medium-and-down hide-on-med-and-up left ml-20">Llega a tu destino aún más rápido</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/DOWNLOAD SECTION-->
+		<!--DRIVER SECTION-->
+		<section id="driver" class="row">
+			<div >
+				<div id="driver-section" class="card-panel col s12 m12 l6 flow-text right bkg-black mb-0 mt-0 p-40">
+					<div class="row mb-0 mt-50">
+						<div class="col s11">
+							<h4 class="mb-0 ">Conduce cuando quieras</h4>
+						</div>
+					</div>
+					<div class="row mt-0">
+						<div class="col s11">
+							<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+						</div>
+					</div>
+					<div class="row mt-0">
+						<div class="col s8">
+							<a href="#modal3" class="btn modal-trigger btn-theme2" id="register-btn">Conviértete en un conductor</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/DRIVER SECTION-->
+			<!--RATES-ROUTES-MAP-SECTION-->
+			<section id="rates" class="row bkg-yellow">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 col m6 rates-section">
+							<h2 class="font-size">Tarifas</h2>
+							<p>Consulta las tarifas LabCar aquí</p>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<img src="assets/images/shape.png" alt="start" class="mb-0">
+										<div class="input-field col s12 mt-0">
+											<input id="start" type="text" class="validate col s9 white-text mt-0" placeholder="Ingrese su punto de partida">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="row">
+								<form class="col s12 m12">
+									<div class="row">
+										<img src="assets/images/shape2.png" alt="end" class="mb-0">
+										<div class="input-field col s12 m12 mt-0">
+											<input id="end" type="text" class="validate col s9 white-text mt-0" placeholder="Ingrese su destino">
+										</div>
+									</div>
+								</form>
+							</div>
+							<button class="btn-theme1 btn-flat col s8 offset-s2">¡TRAZAR RUTA!</button>
+						</div>
+						<div class="col s12 m12 l6">
+							<div class="map white-border">
+								<iframe src="" width="430" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/RATES-ROUTES-MAP-SECTION-->
+			<!--FOOTER-->
+			<footer class="container-fluid">
+				<div class="container ">
+					<!--FOOTER-LOGO-->
+					<div class="row ">
+						<div class="col s12 fake-hr">
+							<div id="logo-footer">
+								<a href="#nav-menu"><img src="assets/images/logoBlanco.png" alt="logo-color"></a>
+							</div>
+						</div>
+					</div>
+					<!--/FOOTER-LOGO-->
+					<!-- FOOTER LINKS COLUMNS-->
+					<div class="row mb-0 ptb-20">
+						<!-- FIRST FOOTER LINKS COLUMN-->
+						<div id="first-column" class="col m3 offset-m3  s6 ">
+							<div class="row mb-0">
+								<a class="col s12">Viaja</a>
+								<a class="col s12">Conduce</a>
+								<a class="col s12">Ciudades</a>
+								<a class="col s12">Reseñas</a>
+								<a class="col s12">Entregas</a>
+								<a class="col s12">¿Cómo funciona?</a>
+								<a class="col s12">Paises</a>
+								<a class="col s12">Seguridad</a>
+							</div>
+						</div>
+						<!-- /FIRST FOOTER LINKS COLUMN-->
+						<!-- SECOND FOOTER LINKS COLUMN-->
+						<div id="second-column"class="col s3 mb-0 hide-on-small-and-down show-on-medium-and-up">
+							<div class="row mb-0">
+								<a class="col s12">Oportunidades</a>
+								<a class="col s12">Nuestra historia</a>
+								<a class="col s12">API de LabCar</a>
+								<a class="col s12">Eventos</a>
+								<a class="col s12">Desarrolladores</a>
+								<a class="col s12">Servicios</a>
+								<a class="col s12">Laboratoria</a>
+								<a class="col s12">Coders</a>
+							</div>
+						</div>
+						<!-- /SECOND FOOTER LINKS COLUMN-->
+						<!-- RIGHT SIDE NAV BAR -->
+						<div class="row mb-0">
+							<div id="stores-column" class="col s6 m3 l3">
+								<!-- SOCIAL MOBILE-->
+								<div id="social-mobile" class="col s11 offset-s1  mt-0 show-on-small">
+									<div class="row mt-0">
+										<ul id="social">
+											<li class="social-icons col s1">
+												<a href="#" id="icoFacebook" title="Facebook">
+													<i class="icon-facebook social-icon  fa fa-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li class="social-icons col s1">
+												<a href="#" id="ico-Twitter" title="Twitter">
+													<i class="icon-twitter social-icon fa fa-twitter" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li class="social-icons col s1">
+												<a href="#" id="ico-LinkedIn" title="LinkedIn">
+													<i class="icon-instagram social-icon fa fa-linkedin" aria-hidden="true"></i>
+												</a>
+											</li class="social-icons col s1">
+											<li class="social-icons col s1">
+												<a href="#" id="ico-Apple" title="Apple Store">
+													<i class="icon-instagram social-icon fa fa-apple" aria-hidden="true"></i>
+												</a>
+											</li class="social-icons col s1">
+											<li class="social-icons col s1">
+												<a href="#" id="ico-Google" title="Play Store">
+													<i class="icon-instagram social-icon fa fa-play" aria-hidden="true"></i>
+												</a>
+											</li class="social-icons">
+										</ul>
+									</div>
+								</div>
+								<div>
+									<a class="col s11 store-image"><img class="responsive-img"src="assets/images/appstore.png" alt="apple-store"></a>
+									<a class="col s11 store-image"><img class="responsive-img"src="assets/images/enBadgeWebGeneric.png" alt="play-store"></a>
+								</div>
+							</div>
+							<!-- /RIGHT SIDE NAV BAR -->
+						</div>
+						<!-- SOCIAL DESKTOP-->
+						<div id="social-column" class="col s6 m3  mt-0 hide-on-small-and-down">
+							<div class="row mt-0">
+								<ul id="social">
+									<li class="social-icons col s1">
+										<a href="#" id="icoFacebook" title="Facebook">
+											<i class="icon-facebook social-icon  fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="social-icons col s1">
+										<a href="#" id="ico-Twitter" title="Twitter">
+											<i class="icon-twitter social-icon fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="social-icons col s1">
+										<a href="#" id="ico-LinkedIn" title="LinkedIn">
+											<i class="icon-instagram social-icon fa fa-linkedin" aria-hidden="true"></i>
+										</a>
+									</li class="social-icons col s1">
+									<li class="social-icons col s1">
+										<a href="#" id="ico-Apple" title="Apple Store">
+											<i class="icon-instagram social-icon fa fa-apple" aria-hidden="true"></i>
+										</a>
+									</li class="social-icons col s1">
+									<li class="social-icons col s1">
+										<a href="#" id="ico-Google" title="Play Store">
+											<i class="icon-instagram social-icon fa fa-play" aria-hidden="true"></i>
+										</a>
+									</li class="social-icons">
+								</ul>
+							</div>
+						</div>
+						<!-- /FOOTER COLUMNS -->
+						<div class="row fake-hr mt-0">
+							<!--/SOCIAL FOOTER-->
+						</div>
+						<!-- COPYRIGHT -->
+						&copy; 2017 LabCar techonologies Inc.
+					</div>
+					<!--END FOOTER CONTAINER-->
+				</footer>
+				<!--MODALS-->
+				<!--LOGIN MODAL-->
+				<div id="modal1" class="modal container-login center responsive flow-text">
+					<div class="modal-content">
+						<div class="row">
+							<img id="user-avatar"src="assets/images/avatar.png" alt="user-avatar" class="responsive-img">
+						</div>
+						<form action="">
+							<div class="input-field col s10 offset-s1">
+								<input id="UserName" type="text" class="validate">
+								<label for="UserName"><i class="fa fa-user"></i>&nbsp; Nombre</label>
+							</div>
+							<div class="input-field col s10 offset-s1">
+								<input id="Password" type="password" class="validate">
+								<label for="Password"><i class="fa fa-lock"></i>&nbsp; Contraseña</label>
+							</div>
+							<button class="btn-flat btn-theme1">Ingresar&nbsp; <i class="fa fa-angle-right"></i></button>
+						</form>
+					</div>
+					<div class="modal-footer flow-text">
+						<p class="text-gray centered ">¿Olvidaste tu contraseña?
+							<a href="#modal1-b" class="btn modal-trigger btn-flat btn-theme3 " id="recovery-btn">RECUPERAR CONTRASEÑA</a>
+						</p>
+					</div>
+					<a href="#!" class="modal-action modal-close text-gray right">
+						<i class="fa fa-times class="responsive-img""></i>
+						<strong>Cerrar</strong>
+					</a>
+				</div>
+				<!--/LOGIN MODAL-->
+				<!--RECOVERY MODAL-->
+				<div id="modal1-b" class="modal container-login">
+					<div class="modal-content">
+						<form action="">
+							<div class="input-field col s10 offset-s1">
+								<input id="recovery-email" type="email" class="validate">
+								<label for="Password"><i class="fa fa-lock"></i>&nbsp; Correo electrónico</label>
+							</div>
+							<button class="btn-flat btn-theme1">Recuperar&nbsp; <i class="fa fa-send"></i></button>
+						</form>
+					</div>
+					<a href="#!" class="modal-action modal-close text-gray right">
+						<i class="fa fa-times class="responsive-img""></i>
+						<strong>Cerrar</strong>
+					</a>
+				</div>
+				<!--/RECOVERY MODAL-->
+				<!--REGISTER MODAL-->
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						<img src="" alt="">
+						<form class="col s12">
+							<div class="row">
+								<div class="col s12 ">
+									<a href="#!" class="btn modal-close btn-theme1 center">YA TIENES UNA CUENTA</a>
+								</div>
+							</div>
+							<p class="center text-gray">O CREA UNA CUENTA NUEVA</p>
+							<div class="row ">
+								<div class="input-field col m6 s12">
+									<input placeholder="Nombre"  type="text" class="validate ">
+								</div>
+								<div class="input-field col m6 s12">
+									<input placeholder="Apellido" type="text" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Correo Electronico@correo.mx" type="password" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Telefono" type="text" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Contraseña" type="password" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Ciudad" type="text" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Opcional(Codigo de invitacion)" type="text" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div clas="col s10 offset-s1 m10 offset-m1 l10 offset-l1">
+									<select>
+										<option value="" disabled selected>¿Cómo te enteraste de nosotros?</option>
+										<option value="1">Facebook</option>
+										<option value="2">Twitter</option>
+										<option value="3">Televisión o Radio</option>
+										<option value="4">Referencia personal</option>
+										<option value="5">Sitio oficial</option>
+										<option value="6">Otro</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<div class="row">
+								<div clas="col s12 m12 l12">
+									<a href="#!" class="modal-action btn-theme2 btn-flat col s12 m12 l12">ENVIAR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/REGISTER MODAL-->
+				<!--DRIVER MODAL-->
+				<div id="modal3" class="modal">
+					<div class="modal-content p-20" id="driver-container">
+						<div class="row">
+							<a href="#!" class="modal-action modal-close text-gray right">
+								<i class="fa fa-times class="responsive-img""></i>
+								<strong>Cerrar</strong>
+							</a>
+						</div>
+						<form>
+							<div class="row">
+								<div class="col s10 offset-s1">
+									<select>
+										<option value="" disabled selected>¿Tienes vehículo de 4 puertas?</option>
+										<option value="1">Sí</option>
+										<option value="2">No</option>
+									</select>
+									<select>
+										<option value="" disabled selected>Marca</option>
+										<option value="1">lorem ipsum</option>
+										<option value="2">lorem ipsum</option>
+										<option value="3">lorem ipsum</option>
+										<option value="4">lorem ipsum</option>
+										<option value="5">lorem ipsum</option>
+										<option value="6">lorem ipsum</option>
+									</select>
+									<h6 class="text-gray">¿No ves tu vehículo en la lista?</h6>
+									<button class=" btn-flat btn-theme3 centered">Envia un correo a sociosmdv@labcar.com &nbsp; <i class="fa fa-send"></i></button>
+									<select>
+										<option value="" disabled selected>Modelo</option>
+										<option value="1">lorem ipsum</option>
+										<option value="2">lorem ipsum</option>
+										<option value="3">lorem ipsum</option>
+									</select>
+									<select>
+										<option value="" disabled selected>Año</option>
+										<option value="1">2018</option>
+										<option value="2">2017</option>
+										<option value="3">2016</option>
+										<option value="4">2015</option>
+										<option value="5">2014</option>
+										<option value="6">2013</option>
+										<option value="7">2012</option>
+										<option value="8">2011</option>
+										<option value="9">2010</option>
+									</select>
+									<input id="car-number" type="text" class="validate" placeholder="Número de matrícula">
+									<label>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close btn-theme2 btn-flat">RESGISTRARSE</a>
+					</div>
+				</div>
+				<!--/DRIVER MODAL-->
+				<!--/MODALS-->
+			</main>
+			<!--SCRIPTS-->
+			<script src="js/jquery.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/materialize.js"></script>
+			<script src="js/app.js"></script>
+		</body>
+		</html>

@@ -170,14 +170,18 @@ p{
 		height: inherit;
 	}
 
-	#driver-section{
+	#driver{
 		background:
 		url(../assets/images/conduce.jpg);
-		background-size: 100%;
-		background-position: bottom;
-		height: 500px;
+		background-size: cover;
+		background-position: center;
+		height: 550px;
 		background-repeat: no-repeat;
 
+	}
+
+	#driver-section{
+		height: 550px;
 	}
 	/* END OF DRIVER SECTION */
 	/* ROUTES SECTION */
@@ -196,11 +200,6 @@ p{
 
 	#route-map{
 		height: 300px;
-
-	}
-
-	.map{
-		padding: 10px;
 	}
 	/* END OF ROUTES SECTION */
 	/* FOOTER*/
@@ -558,15 +557,6 @@ p{
 			padding-top: 0;
 			vertical-align: top;
 		}
-		#driver-section{
-			background:
-			url(../assets/images/conduce.jpg);
-			background-size: 100%;
-			background-position: bottom;
-			height: 290px;
-			background-repeat: no-repeat;
-
-		}
 
 	}
 
@@ -591,15 +581,6 @@ p{
 			padding: 30px;
 		}
 
-		#driver-section{
-			background:
-			url(../assets/images/conduce.jpg);
-			background-size: 100%;
-			background-position: bottom;
-			height: 500px;
-			background-repeat: no-repeat;
-
-		}
 
 		#social-mobile{
 			display: none;
